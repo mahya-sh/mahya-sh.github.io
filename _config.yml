@@ -23,14 +23,15 @@ repository               : "mahya-sh/mahya-sh.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  # avatar           : "profile.png"
   name             : "Mahya Shahshahani"
   pronouns         : "she/her"  
   bio              : "B.Sc. Electrical Engineering (Control Systems), University of Tehran. Interested in machine learning, control systems, and intelligent energy systems."
   location         : "Tehran, Iran"
   #employer         : #"Red Brick University"
-  uri              : # URL
+  uri              : "mahya-sh/mahya-sh.github.io"
   email            : "mahyashahshahani@gmail.com" 
+  github : "mahya-sh"
 
   # Academic websites
   academia         : # URL
