@@ -7,54 +7,60 @@
   {% assign author = site.author %}
 {% endif %}
 
-<div class="author-profile">
-
+<div class="author__content">
   <h3 class="author__name">{{ author.name }}</h3>
+  <p class="author__bio">Electrical Engineer</p>
+</div>
 
-  <p class="author__title">Electrical Engineer</p>
+<div class="author__urls-wrapper">
+  <ul class="author__urls social-icons">
 
-  <ul class="author__social">
+    <li>
+      <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i>
+      Tehran, Iran
+    </li>
 
-    {% if author.github %}
-      <li>
-        <a href="https://github.com/{{ author.github }}" title="GitHub" aria-label="GitHub">
-          <i class="fab fa-github"></i>
-        </a>
-      </li>
-    {% endif %}
+    <li>
+      <a href="https://mahya-sh.github.io/portfolio/mahya-sh/mahya-sh.github.io">
+        <i class="fas fa-fw fa-link" aria-hidden="true"></i>
+        Website
+      </a>
+    </li>
 
-    {% if author.linkedin %}
-      <li>
-        <a href="https://www.linkedin.com/in/{{ author.linkedin }}" title="LinkedIn" aria-label="LinkedIn">
-          <i class="fab fa-linkedin-in"></i>
-        </a>
-      </li>
-    {% endif %}
+    <li>
+      <a href="mailto:mahyashahshahani@gmail.com">
+        <i class="fas fa-fw fa-envelope" aria-hidden="true"></i>
+        Email
+      </a>
+    </li>
 
-    {% if author.goodreads %}
-      <li>
-        <a href="https://www.goodreads.com/{{ author.goodreads }}" title="Goodreads" aria-label="Goodreads">
-          <i class="fab fa-goodreads"></i>
-        </a>
-      </li>
-    {% endif %}
+    <li>
+      <a href="https://orcid.org/0009-0001-7282-7002">
+        <i class="ai ai-orcid" aria-hidden="true"></i>
+        ORCID
+      </a>
+    </li>
 
-    {% if author.orcid %}
-      <li>
-        <a href="{{ author.orcid }}" title="ORCID" aria-label="ORCID">
-          <i class="ai ai-orcid"></i>
-        </a>
-      </li>
-    {% endif %}
+    <li>
+      <a href="https://github.com/mahya-sh">
+        <i class="fab fa-fw fa-github" aria-hidden="true"></i>
+        GitHub
+      </a>
+    </li>
 
-    {% if author.email %}
-      <li>
-        <a href="mailto:{{ author.email }}" title="Email" aria-label="Email">
-          <i class="fas fa-envelope"></i>
-        </a>
-      </li>
-    {% endif %}
+    <li>
+      <a href="https://www.linkedin.com/in/mahya-sh">
+        <i class="fab fa-fw fa-linkedin" aria-hidden="true"></i>
+        LinkedIn
+      </a>
+    </li>
+
+    <li>
+      <a href="https://www.goodreads.com/user/show/146812596-mahya-shahshahani">
+        <i class="fab fa-fw fa-goodreads" aria-hidden="true"></i>
+        Goodreads
+      </a>
+    </li>
 
   </ul>
-
 </div>
