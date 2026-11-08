@@ -7,6 +7,12 @@
   {% assign author = site.author %}
 {% endif %}
 
+<div class="author__avatar">
+  {% if author.avatar %}
+    <img src="{{ author.avatar }}" alt="{{ author.name }}">
+  {% endif %}
+</div>
+
 <div class="author__content">
   <h3 class="author__name">{{ author.name }}</h3>
   <p class="author__bio">Electrical Engineer</p>
@@ -18,13 +24,6 @@
     <li>
       <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i>
       Tehran, Iran
-    </li>
-
-    <li>
-      <a href="https://mahya-sh.github.io/portfolio/mahya-sh/mahya-sh.github.io">
-        <i class="fas fa-fw fa-link" aria-hidden="true"></i>
-        Website
-      </a>
     </li>
 
     <li>
