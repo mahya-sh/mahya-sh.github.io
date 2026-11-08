@@ -43,25 +43,37 @@
 ;
 
 
-/* Custom website design */
 
-/* Yellow background */
+/* =================================
+   CUSTOM SUNSHINE WEBSITE DESIGN
+   ================================= */
+
+$sunshine: #FFD43B;
+$red: #B3261E;
+
+/* Make the main website backgrounds sunshine yellow */
+
 html,
-body {
-  background-color: #F4E66A !important;
-}
-
-.masthead,
-.masthead__inner-wrap,
+body,
+#main,
 .initial-content,
 .page,
 .page__inner-wrap,
+.page__content,
 .sidebar,
+.masthead,
+.masthead::before,
+.masthead__inner-wrap,
+.masthead__menu,
+#site-nav,
+.greedy-nav,
+.greedy-nav .visible-links,
 .page__footer {
-  background: transparent !important;
+  background-color: $sunshine !important;
 }
 
-/* Navigation layout */
+/* Navigation positioning */
+
 .masthead__inner-wrap {
   max-width: none;
   margin-left: 4rem;
@@ -69,31 +81,46 @@ body {
 }
 
 .greedy-nav {
-  background: transparent !important;
+  width: 100%;
 }
 
+/* One continuous red line */
+
 .greedy-nav .visible-links {
-  justify-content: flex-start;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+  border-bottom: 2px solid $red;
+  padding-bottom: 0.4rem;
 }
+
+/* Navigation links */
 
 .greedy-nav .visible-links li {
   margin-right: 2rem;
 }
 
 .greedy-nav .visible-links a {
-  color: #B3261E !important;
-  position: relative;
-  display: inline-block;
+  color: $red !important;
   text-decoration: none;
+  position: relative;
 }
 
-/* Red underline under each navigation title */
+/* Remove individual underlines */
+
 .greedy-nav .visible-links a::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 2px;
-  background-color: #B3261E;
+  display: none !important;
 }
+
+/* Push dark/light toggle to the end of the line */
+
+.greedy-nav .visible-links #theme-toggle {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.greedy-nav .visible-links #theme-toggle a {
+  color: $red !important;
+}
+
