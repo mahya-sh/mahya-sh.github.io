@@ -23,7 +23,7 @@ repository               : "mahya-sh/mahya-sh.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "/images/profile.png"
   name             : "Mahya Shahshahani"
   pronouns         : "she/her"  
   bio              : "B.Sc. Electrical Engineering (Control Systems), University of Tehran. Interested in machine learning, control systems, and intelligent energy systems."
