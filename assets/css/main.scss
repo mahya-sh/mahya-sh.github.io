@@ -41,3 +41,59 @@
     "vendor/font-awesome/solid",
     "vendor/font-awesome/brands"
 ;
+
+
+/* Custom website design */
+
+/* Yellow background */
+html,
+body {
+  background-color: #F4E66A !important;
+}
+
+.masthead,
+.masthead__inner-wrap,
+.initial-content,
+.page,
+.page__inner-wrap,
+.sidebar,
+.page__footer {
+  background: transparent !important;
+}
+
+/* Navigation layout */
+.masthead__inner-wrap {
+  max-width: none;
+  margin-left: 4rem;
+  margin-right: 4rem;
+}
+
+.greedy-nav {
+  background: transparent !important;
+}
+
+.greedy-nav .visible-links {
+  justify-content: flex-start;
+}
+
+.greedy-nav .visible-links li {
+  margin-right: 2rem;
+}
+
+.greedy-nav .visible-links a {
+  color: #B3261E !important;
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+}
+
+/* Red underline under each navigation title */
+.greedy-nav .visible-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #B3261E;
+}
